@@ -5,29 +5,62 @@
     <link href = "style.css" type = "text/css" rel = "stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display|Montserrat:400,700|Raleway:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400|Nunito:200,400,700" rel="stylesheet">
-    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js" defer></script>
-    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" defer></script>
-    <script src="https://unpkg.com/babel-standalone@6/babel.min.js" defer></script>
-    <!-- <script>var exports = {}; var require=()=>React;</script> -->
-    <script src = "script.js" type="text/babel" defer></script>
+     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600&display=swap" rel="stylesheet">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src = "script.js" defer></script>
   </head>
   <body>
     <div class = 'container'>
 
       <nav>
         <h1>Dummy</h1>
-        <h3 id='home'>Home</h3>
-        <h3>Projects</h3>
-        <h3>Contact</h3>
-        <h3>More</h3>
+        <h3 id = 'homeNav'>HOME</h3>
+        <h3 id = 'operationsNav'>OPERATIONS</h3>
+        <h3 id = 'aboutNav'>ABOUT</h3>
+        <h3 id = 'moreNav'>MORE</h3>
         <h1>Dummy</h1>
       </nav>
 
-      <div id = 'main'>
-
+      <div class = 'panel' id = 'home'>
+          <img src = "res/bot.png" />
+          <div id = 'title'>
+            <h1>Bot Name</h1>
+            <h3>The Surveillance Robot</h3>
+          </div>
       </div>
 
-      <footer class = 'panel'>
+      <div class = 'panel' id = 'operations'>
+          <div class = 'resized'>
+            <img src = "res/gear.png" />
+            <div id = 'title'>
+              <h1>Operations</h1>
+            </div>
+          </div>
+          <div id = 'vl'></div>
+          <div id = 'operationsButtons'>
+            <button class = 'button' data-sno='0'>Call Robot at Station #1</button>
+            <button class = 'button' data-sno='1'>Call Robot at Station #2</button>
+            <button class = 'button' data-sno='2'>Call Robot at Station #3</button>
+          </div>
+          <div id = 'map'>
+            <div id = 'marker'></div>
+            <img src = 'res/map.png' />
+          </div>
+      </div>
+
+      <div class = 'panel' id = 'about'>
+          <div id = 'title'>
+            <h1>About</h1>
+          </div>
+      </div>
+
+      <div class = 'panel' id = 'more'>
+          <div id = 'title'>
+            <h1>More</h1>
+          </div>
+      </div>
+
+      <footer>
         <p>--- Find the source code for this website <a href ="https://github.com/abhiar/abhiar.github.io" id = 'sourceCode'>here.</a> ---</p>
       </footer>
 
