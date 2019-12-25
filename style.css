@@ -138,6 +138,19 @@ a {
 
 
 
+
+#about h1 {
+  margin: 50px;
+}
+
+#about h2 {
+  font-family: 'Montserrat';
+  font-weight: 400;
+}
+
+
+
+
 /*Nav*/
 
 nav {
